@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: gestion_materiel
+      POSTGRES_USER: mamy
+      POSTGRES_PASSWORD: mamy3321
+    ports: ["5433:5433"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+volumes:
+  pgdata:
