@@ -679,28 +679,6 @@ class _ProjectsScreenState extends State<ProjectsScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Projets',
-        ),
-
-        actions: [
-          IconButton(
-            tooltip: 'Actualiser',
-            onPressed: _reload,
-            icon: const Icon(
-              Icons.refresh,
-            ),
-          ),
-
-          IconButton(
-            tooltip: 'Nouveau projet',
-            onPressed: _create,
-            icon: const Icon(
-              Icons.add,
-            ),
-          ),
-        ],
-
         bottom: TabBar(
           controller: _tabController,
           tabs: const [

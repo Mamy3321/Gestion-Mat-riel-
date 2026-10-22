@@ -156,23 +156,6 @@ class _InventoryScreenState
 
     return Scaffold(
 
-      // ======================================================
-      // APP BAR
-      // ======================================================
-
-      appBar: AppBar(
-        title: Text(
-          _statut == null
-              ? 'Inventaire'
-              : statutLabels[_statut]
-                    ?? 'Inventaire',
-        ),
-      ),
-
-      // ======================================================
-      // BODY
-      // ======================================================
-
       body: Column(
         children: [
 

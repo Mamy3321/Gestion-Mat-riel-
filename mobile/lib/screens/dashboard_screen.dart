@@ -448,28 +448,28 @@ class _Header extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(width: 16),
-        Material(
-          color: colors.surface,
-          elevation:
-              Theme.of(context).brightness == Brightness.light
-                  ? 2
-                  : 0,
-          shadowColor: Colors.black26,
-          shape: const CircleBorder(),
-          child: InkWell(
-            onTap: onRefresh,
-            customBorder: const CircleBorder(),
-            child: const SizedBox(
-              width: 82,
-              height: 82,
-              child: Icon(
-                Icons.refresh_rounded,
-                size: 36,
-              ),
-            ),
-          ),
-        ),
+        // const SizedBox(width: 16),
+        // Material(
+        //   color: colors.surface,
+        //   elevation:
+        //       Theme.of(context).brightness == Brightness.light
+        //           ? 2
+        //           : 0,
+        //   shadowColor: Colors.black26,
+        //   shape: const CircleBorder(),
+        //   child: InkWell(
+        //     onTap: onRefresh,
+        //     customBorder: const CircleBorder(),
+        //     child: const SizedBox(
+        //       width: 82,
+        //       height: 82,
+        //       child: Icon(
+        //         Icons.refresh_rounded,
+        //         size: 36,
+        //       ),
+        //     ),
+        //   ),
+        // ),
       ],
     );
   }

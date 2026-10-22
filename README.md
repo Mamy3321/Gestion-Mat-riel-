@@ -11,6 +11,7 @@ D:\Gestion de materiel
 cd "D:\Gestion de materiel\backend"
 .\venv\Scripts\Activate.ps1
 docker compose up -d
+$env:ALLOWED_HOSTS="localhost,127.0.0.1,192.168.43.122"
 python manage.py runserver 0.0.0.0:8000
 ```
 API : http://localhost:8000/api/  •  Admin Django : http://localhost:8000/admin/
